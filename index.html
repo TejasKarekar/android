@@ -78,10 +78,13 @@
         @media (min-width: 768px) {
             .sidebar {
                 display: flex;
-                position: sticky; /* Make sidebar sticky */
-                top: 0; /* Stick to the top of its parent */
-                height: 100vh; /* Make it take full viewport height */
-                overflow-y: auto; /* Allow sidebar content to scroll if it's too long */
+                position: sticky;
+                top: 0;
+                left: 0;
+                height: 100vh;
+                align-self: flex-start; /* Stick to top-left */
+                overflow-y: auto;
+                z-index: 50;
             }
         }
     </style>
